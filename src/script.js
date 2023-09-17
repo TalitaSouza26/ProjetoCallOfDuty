@@ -19,3 +19,8 @@ const escrever = () => {
 
 }
 escrever()
+
+document.querySelector('.menu-mobile').addEventListener('click', function() {
+    document.querySelector('.navigation').classList.toggle('active');
+  });
+  

@@ -65,7 +65,7 @@
 
 
 
-  #app{
+  header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +74,7 @@
     
   }
 
-  header{
+  nav{
     display: flex;
     align-items: center;
     column-gap: 64px;
@@ -83,7 +83,8 @@
     padding-top: 24px;
   }
 
-  header img {
+
+  nav img {
     width: 90px;
     height: auto;
 
@@ -92,14 +93,17 @@
   .navigation{
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 30px;
     list-style: none;
+ 
 }
 
-  
+.navigation a:focus {
+   font-size: 20px;
+}
 
   .navigationLink{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -124,7 +128,7 @@
   }
 
   .navigationSocial{
-     margin-left: 700px;
+     margin-left: 600px;
     display: flex;
     align-items: center;
     column-gap: 24px; 
@@ -135,6 +139,7 @@
     width: 40px;
     height: 20px;
     opacity: 0.6;
+
   }
 
   .navigation svg:hover{
@@ -198,10 +203,9 @@
     padding: 7px;
     
   }
-
   .clicks a {
     color: #ffffff;
-    background-image: linear-gradient(90deg, #000000,#cc0d0d );
+    background-image: linear-gradient(80deg, #000000,#cc0d0d );
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
@@ -210,7 +214,18 @@
     text-align: center;
   }
 
-
+   .clicks a:hover {
+    background:#000000 ;}
+ 
+    .clicks a:focus {
+      background:#ffffff64 ;
+       color: #C51212;}
+  
+.sobre{
+  margin-right: 70px;
+  padding: 10px;
+  display: none;
+}
  .clicks{
      display: flex;
      gap: 20px;
@@ -220,4 +235,90 @@
  }
 
 
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navBar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text);
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-mobile {
+    display: flex;
+    margin-left: 20px;
+   
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #000000;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navigation.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navigation li {
+    margin: 10px 0;
+  }
+
+  .navigationLink {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  main {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+  }
+  .mainInfo {
+    display: none;
+  }
+  .callOfDuty{
+     font-size: 28px;
+     margin-left: 75px;
+  }
+  .mwdois{
+    width: 300px;
+    margin-left: 75px;
+  }
+
+.navigationSocial{
+   margin: auto;
+}
+.clicks{
+  width: 320px;
+  margin-left: 75px;
+}
+.sobre{
+display: block;
+position: relative;
+left: 40px;
+}
+
+}
 

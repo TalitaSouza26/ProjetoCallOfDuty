@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+body{
+    background-image: url(./Assets/caveira.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boxtexto  {
+   padding: 20px;
+   font-size: 2rem;
+   color: white;
+   text-align: center;
+   background-color: rgba(19, 19, 19, 0.596);
+   height: 100vh;
+
+
+}
+
+@media screen and (max-width: 1000px){
+    body{
+         background-image: url(./Assets/caveira.png);
+         height: 100%;
+    }
+    .boxtexto{
+        height: 100%;
+        
+    }
+}
